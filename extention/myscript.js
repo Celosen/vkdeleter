@@ -7,7 +7,16 @@ function insertButton () {
 	 
 		var cont = $('#im_dialogs_summary .summary');
 		cont.append(buttonHtml);
-	}	
+		
+		btn = $('#vkdl');
+		btn.click (onClick);	
+	}
+		
 }
 setInterval(insertButton, 200);
 
+	
+
+function onClick (){
+	alert ('Not worked yet');
+}
