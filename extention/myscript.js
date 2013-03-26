@@ -17,5 +17,5 @@ setInterval(insertButton, 200);
 
 
 function onClick (){
-	alert ('Not worked yet');
-}
+	var btnAction = $('.dialogs_del').click();
+	}
