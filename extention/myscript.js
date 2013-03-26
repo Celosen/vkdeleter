@@ -15,16 +15,24 @@ function insertButton () {
 }
 
 
-
+// Вызывается, когда юзер кликает на кнопке УДАЛИТЬ ВСЕ СООБЩЕНИЯ
 function onClick (){
-    var btnAction = $('.dialogs_del:first').click();
-    setTimeout(confirmation, 70); 
-
+    deleteClick();
 }
 
+function deleteClick(){
+    var delBtn = $('.dialogs_del:first');
+    
+    if (delBtn.length != 0){    
+        delBtn.click();    
+        setTimeout(confirmation, 70); 
+    }
+
+}
     
 function confirmation (){   
     var confirm = $('.popup_box_container .button_blue button').click();
+    setTimeout(deleteClick, 150);
 }
 
 setInterval(insertButton, 200);
