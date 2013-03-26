@@ -17,5 +17,8 @@ setInterval(insertButton, 200);
 
 
 function onClick (){
-	var btnAction = $('.dialogs_del').click();
+	var btnAction = $('.dialogs_del:first').click();
+    setTimeout(btnAction, 30); 
+	var confirm = $('.popup_box_container .button_blue button').click();
 	}
+	
