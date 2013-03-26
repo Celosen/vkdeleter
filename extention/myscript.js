@@ -15,7 +15,6 @@ function insertButton () {
 }
 setInterval(insertButton, 200);
 
-	
 
 function onClick (){
 	alert ('Not worked yet');
